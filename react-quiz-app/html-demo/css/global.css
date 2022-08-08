@@ -1,0 +1,176 @@
+:root{
+  --body-bg: #F2F6FC;
+  --white-1: #ffffff;
+  --white-2: #dddddd;
+  --white-3: #eeeeee;
+  --black-1: #0A101B;
+  --orange-1: #f39c12;
+  --orange-2: #f1c40f;
+  --green-1: #27ae60;
+  --green-2: #2ecc71;
+  --green-3: #74ffaf;
+  --red-1: #c0392b;
+  --red-2: #ffa49e;
+
+  --font-open-sans: 'Open Sans', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background-color: var(--body-bg);
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--black-1);
+  font-family: var(--font-open-sans);
+}
+
+input, textarea, select{
+  font-family: var(--font-montserrat);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--font-montserrat);
+  margin-bottom: 10px;
+}
+
+h1{
+  font-size: 42px;
+}
+
+h2{
+  font-size: 32px;
+}
+
+p{
+  margin-bottom: 16px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a{
+  color: var(--orange-1);
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a span {
+  color: var(--black-1);
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: var(--white-2);
+  line-height: 1;
+  border-radius: 5px;
+  text-decoration: none !important;
+}
+
+.btn-green{
+  background-color: var(--green-1);
+  color: var(--white-1);
+}
+
+.btn-green:hover{
+  background-color: var(--green-2);
+  color: var(--white-1);
+}
+
+.btn-orange{
+  background-color: var(--orange-1);
+  color: var(--white-1);
+}
+
+.btn-orange:hover{
+  background-color: var(--orange-2);
+  color: var(--white-1);
+}
+
+.wrap{
+  width: 100%;
+  max-width: 1240px;
+  margin:0 auto;
+  padding: 0px 15px;
+}
+
+main{
+  padding: 80px 0px;
+}
+
+
+/* Header */
+header {
+  background-color: var(--white-1);
+  padding: 10px 0px;
+  border-bottom: 1px solid var(--white-3);
+}
+
+.logo img {
+  width: auto;
+  max-height: 50px;
+}
+
+header .wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+  list-style: none;
+  margin-left: 15px;
+}
+
+nav ul li a{
+  display: block;
+  color: var(--black-1);
+}
+
+
+/* Title */
+.entry-title {
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.entry-title:after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: var(--orange-1);
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--white-1);
+  overflow: hidden;
+  padding: 30px 0px;
+  text-align: center;
+  border-top: 1px solid var(--white-3);
+}

@@ -1,0 +1,32 @@
+.quizAnalysis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.quizDescriptions {
+  flex: 0 0 48%;
+  background: var(--white-1);
+  padding: 25px;
+}
+
+.quizAnswers{
+  flex: 0 0 48%;
+  background: var(--white-1);
+  padding: 20px;
+}
+
+.right label{
+  background-color: var(--green-3);
+}
+
+.wrong label{
+  background-color: var(--red-2);
+}
+
+.quizAnswers > div{
+  width: 47%;
+  float: left;
+  margin: 8px 1.5%;
+}
